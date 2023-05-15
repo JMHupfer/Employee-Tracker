@@ -136,7 +136,7 @@ function start() {
 
 function viewDepartments() {
     var query = "SELECT * FROM department";
-    db.query(query, function(err, res) {
+    db.query(query, function (err, res) {
         if (err) throw err;
         console.table(res);
         start();
@@ -158,7 +158,7 @@ function addDepartment() {
             },
             function (err, res) {
                 if (err) throw err;
-                console.table(res);
+                console.log('Department added succesfully');
                 start();
             }
         )
@@ -167,7 +167,7 @@ function addDepartment() {
 
 function viewRoles() {
     var query = "SELECT * FROM role";
-    db.query(query, function(err, res) {
+    db.query(query, function (err, res) {
         if (err) throw err;
         console.table(res);
         start();
@@ -201,7 +201,7 @@ function addRole() {
             },
             function (err, res) {
                 if (err) throw err;
-                console.table(res);
+                console.log('Role added successfully!');
                 start();
             }
         )
@@ -210,7 +210,7 @@ function addRole() {
 
 function viewEmployees() {
     var query = "SELECT * FROM employee";
-    db.query(query, function(err, res) {
+    db.query(query, function (err, res) {
         if (err) throw err;
         console.table(res);
         start();
@@ -240,6 +240,9 @@ function addEmployee() {
             name: "manager_id"
         }
     ]).then(function (res) {
+        if (res.manager_id === '') {
+            res.manager_id = null;
+        }
         var query = db.query(
             "INSERT INTO employee SET ?",
             {
@@ -250,7 +253,7 @@ function addEmployee() {
             },
             function (err, res) {
                 if (err) throw err;
-                console.table(res);
+                console.log('Employee added successfully!');
                 start();
             }
         )
@@ -271,9 +274,9 @@ function updateEmployeeRole() {
         }
     ]).then(function (res) {
         var query = "UPDATE employee SET role_id = ? WHERE id = ?";
-        db.query(query, [res.role_id, res.employee_id], function(err, res) {
+        db.query(query, [res.role_id, res.employee_id], function (err, res) {
             if (err) throw err;
-            console.table(res);
+            console.log('Employee updated successfully!');
             start();
         });
     });
