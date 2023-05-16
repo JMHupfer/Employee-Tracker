@@ -49,4 +49,4 @@
 
   ## Link to Video Playthrough of Project
   
-  - <a href="https://drive.google.com/file/d/1px2yDh7LqFRzzpIujHbaNzGIl5GfbNRt/view" target="_blank.">Watch My Walkthrough Here</a>
+  - <a href="https://drive.google.com/file/d/1px2yDh7LqFRzzpIujHbaNzGIl5GfbNRt/view" target="blank">Watch My Walkthrough Here</a>
