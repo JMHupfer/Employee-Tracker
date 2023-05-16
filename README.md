@@ -22,17 +22,17 @@
   
   - This project required the installation of inquirer, mySQL2, and console.package. I ran an npm install for each of these, inquirer needing to be version 8.2.4, and once the code was ready for launch I went ahead and ran mysql -u root -p, adding my password just to describe my tables and verify the information was correct, then I ran npm start to get the project going.
   
-  ##Usage
+  ## Usage
   
   - You can use this project by first running npm start once you are cd'd into the correct folder. You will be given a series of prompts in which you can interact with the different databases that are provided, including department, role, and employee. 
   
-  ##License
+  ## License
 
   - [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   Refer to [https://choosealicense.com/](https://choosealicense.com/).
 
-  ##Contributors
+  ## Contributors
 
   - This time around it was rewatching lectures from class, including the mini project, which is why I was starting the project using express instead of inquirer. I did also get help from a few online forums to understand the Switch statement. We learned about it previously but I didn't realize it's usefuleness until this project. 
 
