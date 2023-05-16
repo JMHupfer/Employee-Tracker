@@ -25,6 +25,11 @@
   ## Usage
   
   - You can use this project by first running npm start once you are cd'd into the correct folder. You will be given a series of prompts in which you can interact with the different databases that are provided, including department, role, and employee. 
+
+![image](https://github.com/JMHupfer/Employee-Tracker/assets/121475398/72e8ed37-ab6c-49e4-8599-a615e8d4cc78)
+![image](https://github.com/JMHupfer/Employee-Tracker/assets/121475398/02853dd0-5397-4198-8676-9b1e303cc29f)
+![image](https://github.com/JMHupfer/Employee-Tracker/assets/121475398/ec4beb5f-0984-4863-a2fe-1a7937524ce6)
+![image](https://github.com/JMHupfer/Employee-Tracker/assets/121475398/a7191d45-67fc-45a1-b736-dc4296d1d1f4)
   
   ## License
 
