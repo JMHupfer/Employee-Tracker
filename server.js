@@ -1,3 +1,6 @@
+// Any code that is commented out was because my first attempt at building the project was using express instead of inquirer, but I did not want to delete my code after realizing mistake.
+// Now I can switch back and forth for future references.
+
 const mysql = require('mysql2');
 // const express = require('express');
 const inquirer = require('inquirer');
